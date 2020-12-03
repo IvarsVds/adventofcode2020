@@ -24,6 +24,6 @@ func TestCalcSecondTask(t *testing.T) {
 
 	test := calcSecondTask(testInput)
 	if test != 1 {
-		t.Errorf("Expected result to be 2, but got %v", test)
+		t.Errorf("Expected result to be 1, but got %v", test)
 	}
 }
