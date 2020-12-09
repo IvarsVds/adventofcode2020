@@ -12,9 +12,13 @@ func main() {
 		panic(err)
 	}
 
-	res1, _ := solveFirstTask(input)
+	res1, ids := solveFirstTask(input)
 
 	fmt.Println(res1)
+
+	for _, id := range ids {
+		fmt.Println(id)
+	}
 }
 
 func getInput(fname string) ([]string, error) {
